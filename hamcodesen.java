@@ -53,7 +53,9 @@ class hmcodesen
 			for(j=1;j<=(n+k);j++)
 			{
 				if(((j>>i)&1)==1)
-					sum=(byte)(sum^res[j-1]);
+					{
+					    sum=(byte)(sum^res[j-1]);
+					}
 					//res[(int)Math.pow(2,i)-1]=sum;
 			}
 			res[(int)Math.pow(2,i)-1]=sum;
